@@ -16,8 +16,8 @@ function getCommonCharacterCount(s1, s2) {
   const arr2 = s2.split('');
   let result = 0;
   for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++){
-      if(arr1[i] === arr2[j]) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
         arr2.splice(j, 1);
         result++;
         break;
@@ -28,5 +28,5 @@ function getCommonCharacterCount(s1, s2) {
 }
 
 module.exports = {
-  getCommonCharacterCount
+  getCommonCharacterCount,
 };

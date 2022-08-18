@@ -13,11 +13,11 @@ const { NotImplementedError } = require('../extensions/index.js');
 function encodeLine(str) {
   let result = '';
   let counter = 0;
-  while(counter < str.length) {
+  while (counter < str.length) {
     let element = str[counter];
     let letterCounter = 0;
 
-    while(element === str[counter]) {
+    while (element === str[counter]) {
       letterCounter++;
       counter++;
     }
@@ -27,5 +27,5 @@ function encodeLine(str) {
 }
 
 module.exports = {
-  encodeLine
+  encodeLine,
 };
