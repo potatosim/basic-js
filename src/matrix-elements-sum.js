@@ -21,19 +21,11 @@ function getMatrixElementsSum(matrix) {
 
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
-      // if (i !== 0) {
-      //   if (matrix[i - 1][j] !== 0) {
-      //     result += matrix[i][j];
-      //   }
-      // } else {
-      //   result += matrix[i][j];
-      // }
       if (i !== 0 && matrix[i - 1][j] === 0) {
         matrix[i][j] = 0;
       }
     }
   }
-  console.log(matrix);
   return matrix.reduce((acc, cur) => acc + cur.reduce((a, b) => a + b), 0);
 }
 console.log(
